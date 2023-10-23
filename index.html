@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Aranoz</title>
+
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+            <button class="btn button-menu" onclick="menu()" type="submit" id="button-menu">
+                <span class="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </button>
+          
+            <a href="#" class="logo">
+                <img src="images/logo.png.webp" alt="logo du site" >
+            </a>
+
+            <ul id="ul">
+                <li><a href="index.html">Home</a></li>
+                <li id="shop" class="drop-down-menu-parent"><a href="#" >Shop <i class="fa-solid fa-caret-down"> </i></a>
+               
+                    <div class="drop-down-menu">
+                    <a href="index.html" class="drop-down-item">Shop Category</a><br>
+                    <a href="index.html" class="drop-down-item">Product Details</a>
+                    </div>
+                
+                </li>
+
+
+                <li id="pages" class="drop-down-menu-parent"><a href="#">Pages <i class="fa-solid fa-caret-down"> </i></a>
+                    <div class="drop-down-menu">
+                        <a href="index.html" class="drop-down-item">Login</a><br>
+                        <a href="index.html" class="drop-down-item">tracking</a>
+                        <a href="index.html" class="drop-down-item">product checkout</a>
+                        <a href="#shopping-cart" class="drop-down-item">shopping cart</a>
+                        <a href="index.html" class="drop-down-item">confirmation</a>
+                        <a href="index.html" class="drop-down-item">elements</a>
+                    </div>
+                
+                </li>
+
+                <li class="drop-down-menu-parent" id="blog"><a href="#awesome">Blog <i class="fa-solid fa-caret-down"> </i></a>
+                    
+                    <div class="drop-down-menu">
+                        <a href="#awesome" class="drop-down-item">blog</a><br>
+                        <a href="#awesome" class="drop-down-item">single blog</a>
+                        </div>
+                
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-bar-icons">
+                <button onclick="search()" id="button-search" type="submit">
+                <a href="#" id="search"  ><i class="fa-solid fa-magnifying-glass"  ></i></a>   </button>           
+                <a href="#awesome"><i class="fa-regular fa-heart"></i></a>
+                <a href="#cart"><i class="fa-sharp fa-solid fa-cart-plus"></i></a>
+                   
+                
+            </div>
+        </nav>
+        <div class="input-group" id="search-group">
+            <input type="text"   placeholder="Search Here" name="search">
+            <button class="btn" id="close" onclick="close()" type="submit">
+            <span class="close"><i class="fa-solid fa-xmark"></i></span></button>
+        </div>
+        
+    </header>
+ 
+    <div style="clear: both;">
+
+    </div>
+    <section id="wood">
+        <div class="container ">
+            <div class="row">
+                <div class="offset-lg-1 offset-xl-0 col-xl-4 col-lg-4 offset-1 offset-sm-0  col-sm-12 col-md-12">
+                    <h1 >Wood & Cloth Sofa</h1>
+                  
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, agum cumque harum non provident aliquam.</p>   
+                        <a href="#" class="btn btn-info "> buy now</a>
+               
+                    </div>
+
+                <div class=" col-xl-8  col-md-12 ">
+                  <img src="images/banner_img.png.webp" alt="picture of banner">
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <div style="clear: both;">
+
+    </div>
+
+    <section id="featured">
+        <h2>Featured Category</h2>
+        <div class="container">
+           
+            <div class="row ">
+                <div class="col-lg-7 col-md-6 col-sm-12 ">
+                    <div class="single-feature  ">
+                        <!--
+                            d-flex justify-content-between align-content-lg-center flex-column
+                            align-content-center justify-content-between
+                           
+                            justify-content-between  -->
+                        <div class="feature-content float-lg-start float-md-start ">
+                            <span>Premium Quality</span>
+                            <h3>Latest foam Sofa</h3>
+                            <a href="#" class="btn btn-primary disabled">explore now <i class="fa-solid fa-play"></i></a>
+                        </div>
+                       <div class="feature-image ml-lg-3 ml-sm-3 m-md-auto  ml-lg-auto float-lg-end">
+                        <img src="images/feature_1.png.webp" class="img-fluid mx-auto d-block " alt="feature 1">
+                       </div>
+                       
+                    </div>
+                        
+                </div>
+
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="single-feature feature-2 ">
+                    <div class="feature-content float-lg-start ">    
+                    <span>Premium Quality</span>
+                    <h3>Latest foam Sofa</h3>
+                    <a href="#" class="btn btn-primary disabled">explore now <i class="fa-solid fa-play"></i></a>
+                </div>
+                <div class="feature-image1 ml-lg-3 ml-sm-3 ml-lg-auto float-lg-end">
+                    <img src="images/feature_2.png.webp" class="img-fluid mx-auto d-block feature-2-img" alt="feature 2">
+                </div>
+                </div>
+             </div> 
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="single-feature second-line">
+                    <div class="feature-content float-lg-start " > 
+                    <span>Premium Quality</span>
+                    <h3>Latest foam Sofa</h3>
+                    <a href="#" class="btn btn-primary disabled"> explore now <i class="fa-solid fa-play"></i></a>
+                     </div>  
+                    <div class="feature-image2 ml-lg-3 ml-sm-3 ml-lg-auto float-lg-end" >
+                    <img src="images/feature_3.png.webp" class="img-fluid mx-auto d-block " alt="feature 3">
+                     </div>
+                </div>
+            </div>
+      
+
+                <div class="col-lg-7 col-md-6 col-sm-12 ">
+                    <div class="single-feature second-line feature-4">
+                    <div class="feature-content float-lg-start ">   
+                    <span>Premium Quality</span>
+                    <h3>Latest foam Sofa</h3>
+                    <a href="#" class="btn btn-primary disabled">explore now <i class="fa-solid fa-play"></i></a>
+
+                    </div>
+                    <div class="feature-image4 ml-lg-3  ml-lg-auto float-lg-end">
+                    <img src="images/feature_4.png.webp" class="img-fluid mx-auto d-block" id="img-feature4" alt="feature 4">
+                </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div style="clear :both;">
+
+    </div>
+
+    <section id="awesome">
+    
+        <div class="container">
+            <div class="row align-content-center justify-content-between">
+                <div class="col-lg-12  ">
+                    
+                    <h2>Awesome <span >Shop</span> </h2> 
+                
+                </div>
+
+            </div>
+
+            <div class="row row1 align-content-center justify-content-between">
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="card">
+                        <div class="single-product">
+                            <img src="images/product_1.png.webp" class="image card-img-top" alt="product 1">
+                            <h4 class="titre">Quartz Belt Watch1</h4>
+                        <h3 class="prix">2800 DZD</h3>
+                        <div class="bouton" class="d-flex justify-content-between">
+                            <button class="btn btn-primary add-to-cart" type="submit" >+ add to cart </button>
+                            <div class="i">
+                                <button class="button-heart"   > <i class="fa-regular fa-heart" id="heart"></i>
+                                    <i class="fa-solid fa-heart" id="heart2"></i>
+                                </button>
+                            </div>
+                            
+                        </div>
+                      
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="card">
+                        <div class="single-product">
+                            <img src="images/product_2.png.webp" class="image card-img-top" alt="product 2">
+                            <h4 class="titre">Quartz Belt Watch2</h4>
+                            <h3 class="prix">3800 DZD</h3>
+                            <div class="bouton" class="d-flex justify-content-between">
+                                <button class="btn btn-primary add-to-cart" type="submit" >+ add to cart </button>
+                                <div class="i">
+                                    <button class="button-heart"   > <i class="fa-regular fa-heart" id="heart"></i>
+                                        <i class="fa-solid fa-heart" id="heart2"></i>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="card">
+                        <div class="single-product">
+                            <img src="images/product_3.png.webp" class="image card-img-top" alt="product 3">
+                            <h4 class="titre">Quartz Belt Watch3</h4>
+                            <h3 class="prix">1000 DZD</h3>
+                            <div class="bouton" class="d-flex justify-content-between">
+                                <button class="btn btn-primary add-to-cart" type="submit" >+ add to cart </button>
+                                <div class="i">
+                                    <button class="button-heart"   > <i class="fa-regular fa-heart" id="heart"></i>
+                                        <i class="fa-solid fa-heart" id="heart2"></i>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card">
+                        <div class="single-product">
+                            <img src="images/product_4.png.webp" class="image card-img-top" alt=" product 4">
+                            <h4 class="titre">Quartz Belt Watch4</h4>
+                            <h3 class="prix">3800 DZD</h3>
+                            <div class="bouton" class="d-flex justify-content-between">
+                                <button class="btn btn-primary add-to-cart" type="submit" >+ add to cart </button>
+                                <div class="i">
+                                    <button class="button-heart"   > <i class="fa-regular fa-heart" id="heart"></i>
+                                        <i class="fa-solid fa-heart" id="heart2"></i>
+                                    </button>
+                                </div> 
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="card">
+                        <div class="single-product">
+                            <img src="images/product_5.png.webp" class="image card-img-top" alt="product 5">
+                            <h4 class="titre">Quartz Belt Watch5</h4>
+                            <h3 class="prix">3800 DZD</h3>
+                            <div class="bouton" class="d-flex justify-content-between">
+                                <button class="btn btn-primary add-to-cart" type="submit" >+ add to cart </button>
+                                <div class="i">
+                                    <button class="button-heart"   > <i class="fa-regular fa-heart" id="heart"></i>
+                                    <i class="fa-solid fa-heart" id="heart2"></i>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6  col-sm-6">
+                    <div class="card">
+                        <div class="single-product">
+                            <img src="images/product_6.png.webp" class="image card-img-top" alt=" product 6">
+                            <h4 class="titre">Quartz Belt Watch6</h4>
+                            <h3 class="prix">3800 DZD</h3>
+                            <div class="bouton" class="d-flex justify-content-between">
+                                <button class="btn btn-primary add-to-cart" type="submit" >+ add to cart </button>
+                                <div class="i">
+                                    <button class="button-heart"   > <i class="fa-regular fa-heart" id="heart"></i>
+                                        <i class="fa-solid fa-heart" id="heart2"></i>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card">
+                        <div class="single-product">
+                            <img src="images/product_7.png.webp" class="image card-img-top" alt="product 7">
+                            <h4 class="titre">Quartz Belt Watch7</h4>
+                            <h3 class="prix">3800 DZD</h3>
+                            <div class="bouton" class="d-flex justify-content-between">
+                                <button class="btn btn-primary add-to-cart" type="submit" >+ add to cart </button>
+                                <div class="i">
+                                    <button class="button-heart" > <i class="fa-regular fa-heart" id="heart"></i>
+                                        <i class="fa-solid fa-heart" id="heart2"></i>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="card">
+                        <div class="single-product">
+                            <img src="images/product_8.png.webp" class="image card-img-top" alt="product 8">
+                            <h4 class="titre">Quartz Belt Watch8</h4>
+                            <h3 class="prix">3800 DZD</h3>
+                            <div class="bouton" class="d-flex justify-content-between">
+                                <button class="btn btn-primary add-to-cart" type="submit" >+ add to cart </button>
+                               <div class="i">
+                                <button class="button-heart"   > <i class="fa-regular fa-heart" id="heart"></i>
+                                    <i class="fa-solid fa-heart" id="heart2"></i>
+                                </button>
+                               </div>
+                                
+                            </div>
+                       
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    <div style="clear: both;">
+
+    </div>
+    
+    <section id="offer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6  col-sm-0">
+                    <img src="images/offer_img.png.webp" alt="offer image">
+                </div>
+
+                <div class="col-lg-6   col-sm-12">
+                    <h2>Weekly Sale on 60% Off All Products</h2>
+                    <div class="count-down">
+                        <div class="timer d-flex justify-content-between ">
+                    <div class="days date">
+                     
+                        <!-- <div class="content"> -->
+                            <span>days</span>
+                            <p id="j">0</p>
+                        <!-- </div> -->
+                    </div>
+            
+                    <div class=" hours date">
+                        <!-- <h1>Heures</h1> -->
+                        <!-- <div class="content"> -->
+                            <span>hours</span>
+                            <p id="h">0</p>
+                        <!-- </div> -->
+                    </div>
+            
+                    <div class="minutes date">
+                        <!-- <h1>Minute</h1> -->
+                        <!-- <div class="content"> -->
+                            <span>minutes</span>
+                            <p id="m">0</p>
+                        <!-- </div> -->
+                    </div>
+            
+                    <div class="seconds date">
+                        <!-- <h1>Secondes</h1> -->
+                        <!-- <div class="content"> -->
+                            <span>seconds</span>
+                            <p id="s">0</p>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter Email Address" >
+                        <a href="#" class="btn ">book now</a>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="best-sellers">
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-6">
+                    
+                    <h2>Best Sellers <span>Shop</span> </h2> 
+                
+                </div>
+
+            </div>
+
+            <div class="row align-content-center justify-content-between">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="single-product">
+                            <img src="images/product_1.png.webp" class="card-img-top" alt="best seller 1">
+                            <h4>Quartz Belt Watch</h4>
+                        <h3>$150.00</h3>
+                      
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="single-product">
+                            <img src="images/product_4.png.webp" class="card-img-top" alt="best seller 2">
+                            <h4>Quartz Belt Watch</h4>
+                             <h3>$150.00</h3>
+                       
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="single-product">
+                            <img src="images/product_2.png.webp" class="card-img-top" alt="best seller 3">
+                            <h4>Quartz Belt Watch</h4>
+                        <h3>$150.00</h3>
+                       
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="single-product">
+                            <img src="images/product_3.png.webp" class="card-img-top" alt="best seller 4">
+                            <h4>Quartz Belt Watch</h4>
+                            <h3>$150.00</h3>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+    
+    <div style="clear:both">
+
+    </div>
+
+    <section id="subscribe">
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-2  col-md-0 ">
+
+                    </div>
+                    <div class="col-lg-8 col-sm-12 col-md-12">
+                        <div class=" text-center">
+                            <h5>Join Our Newsletter</h5>
+                            <h2>Subscribe to get Updated with new offers</h2>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text"  placeholder="Enter Email Address" >
+                            <a href="#" class="btn ">book now</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-2  col-md-0">
+
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    
+
+    <section id="cart">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-sm-0">
+                    
+                </div>
+                <div class="col-lg-10 col-sm-12">
+                    
+                    <table class="shopping-cart" id="shopping-cart" >
+                        <thead>
+                            <tr >
+                                <th id="produit"> Produit</th>
+                                <th id="prix">Prix</th>
+                                <th id="quantite">Quantité</th>
+                                <th id="sous-total">Sous-total</th>
+                            </tr>
+
+                        </thead>
+                      
+                       
+                           
+                      <div id="tbody">
+
+                     
+                        <tbody >
+                         
+                            <!-- <tr class="cart-article">
+                                <td id="img">
+                                    <button type="button" class="remove"><i class="fa-solid fa-xmark"></i></button>
+                                   
+                                    <img src="images/product_1.png.webp" alt="" ><h4 class="cart-titre">Quartz Belt Watch</h4>
+                                </td>
+                                <td><h4 class="cart-prix"> 1800 DZD</h4></td>
+                                <td>
+                                    <input type="number" value="2" class="cart-quantite">
+                                </td>
+                                <td><h4 class="cart-sous-total"> 1800 DZD</h4></td>
+                            </tr>  -->
+
+                            <!-- <tr class="cart-article">
+                                <td id="img">
+                                    <button type="button" class="remove"><i class="fa-solid fa-xmark"></i></button>
+                                   
+                                    <img src="images/product_1.png.webp" alt="" ><h4 class="cart-titre">Quartz Belt Watch</h4>
+                                </td>
+                                <td><h4 class="cart-sous-total"> 1800 DZD</h4></td>
+                                <td>
+                                    <input type="number" value="2" class="cart-quantite">
+                                </td>
+                               
+                            </tr>  -->
+                    
+                        </tbody>
+                    </div>
+                        
+                    </table>
+                  
+                </div>
+                <div class="col-lg-1 col-sm-0">
+                   
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-1" >
+                   
+                </div>
+
+                <div class="col-lg-10"  >
+
+                    
+                    <table class="cart-total">
+                        
+                        <tr>
+                            <td> <h4>Total</h4></td>
+                            <td>  <h4 class="cart-total-prix">0 DZD</h4></td>
+                            <td><button class="btn btn-primary acheter" type="button">Acheter</button></td>
+                        </tr>
+                    </table>   
+                      
+                    </div>
+                </div>
+
+                <div class="col-lg-1"  >
+                   
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        
+        <div class="container mb-3 d-flex flex-column justify-content-evenly">
+            <h2 class="contact-title">Get in Touch</h2>
+            <div class=" row ">
+                <div class="col-lg-12  col-sm-12 ">
+                    <textarea name="" class="form-control  " placeholder="Enter message" id="message" cols="20" rows="7"></textarea>
+                </div>
+            </div>
+            
+            <div class=" row ">
+                    <div class="col-lg-6 col-sm-12 " >
+                        <input type="text" class="form-control " id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="col-lg-6 col-sm-12  " >
+                        <input type="email" class="form-control  " id="email" placeholder="Enter your email">
+                    </div>
+            </div>
+
+            <div class="mb-sm-4 row  ">           
+            <div class="col-lg-12  col-sm-12">
+                <input type="email" class="form-control p-lg-2 mb-lg-2 p-sm-2 mb-sm-2" id="subject" placeholder="Enter subject">
+            </div>
+          </div>      
+          <div class=" row ">
+          <div class="col-sm-7 ">
+            <div class="form-contact ">
+                <a href="#" class="btn_3 send  ">Send message</a>
+              </div>   
+          </div>
+          <div class="col-sm-4">
+            
+          </div>
+          <div class="col-sm-4">
+            
+          </div>
+        </div>
+                   
+           
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6">
+                    <h4>Top Products</h4>
+                    <ul>
+                        <li><a href="#">Managed Website</a></li>
+                        <li><a href="#">Manage Reputation</a></li>
+                        <li><a href="#">Power Tools</a></li>
+                        <li><a href="#">Marketing Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Brand Assets</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h4>Features</h4>
+                    <ul>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Brand Assets</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Experts</a></li>
+                        <li><a href="#">Agencies</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-9">
+                    <h4>Newsletter</h4>
+                    <p>Heaven fruitful doesn't over lesser in days. Appear creepinghhkyt.</p>
+                    <div class="input-group">
+                        <input type="text"  placeholder="Email Address" >
+                        <a href="#" class="btn ">subscribe</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12  col-md-12 col-sm-12 ">
+                    <p>Copyright ©2023 All rights reserved <i class="fa-regular fa-heart"></i> This template is made with by <span>Rania</span></p>
+                </div>
+                
+                <div class="offset-lg-4  col-lg-8 col-6 col-md-5 col-sm-6 offset-4 col-4 offset-sm-3 social-media">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+   
+    
+   
+    <script src="script.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+</body>
+</html>
