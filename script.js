@@ -36,7 +36,7 @@ function search(){
   }
 
 
-var countDownDate = new Date("July 16,2023 11:40:00").getTime();
+var countDownDate = new Date("July 16,2024 11:40:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
