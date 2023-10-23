@@ -5,14 +5,17 @@
     *{
         margin: 0;
         padding: 0;
+        
     }
     body{
         margin: 0;
         padding: 0;
         
+      
     }
     header{
         padding: 20px 0px;
+      
     }
   
     /* #nav-bar ul{
@@ -110,6 +113,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
     }
 
    
@@ -140,8 +144,15 @@
         width: 30%;
         padding: 15px 20px;
 
+
     }
 
+    #featured{
+        overflow-x: hidden;
+       
+    }
+
+   
     #featured h2{
         font-size: 26px;}
 
@@ -231,8 +242,13 @@
      
      section{
         width: 100%;
+        
      }
-            
+          
+     
+     #awesome{
+        overflow-x: hidden;
+     }
 
     #awesome .container .row .col-sm-12 h2{
             color: #1a1a1a;
@@ -335,6 +351,7 @@
             margin-top: 100px;
             background-color: #ecfdff;
             padding: 60px 0px;
+            overflow-x: hidden;
         }
 
         #offer .container .row h2{
@@ -354,7 +371,11 @@
             width: 90%;
         }
         
+        #best-sellers{
+            overflow-x: hidden;
+        }
 
+        
         #best-sellers .container .row{
             margin-top: 30px;
         }
@@ -369,7 +390,7 @@
         }
 
         #subscribe{
-           
+            overflow-x: hidden;
             margin-top: 70px;
         }
 
@@ -398,6 +419,7 @@
 
         #footer{
             margin-top: 70px;
+            overflow-x: hidden;
           
         }
         #footer .input-group{
@@ -690,6 +712,7 @@
     body{
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
         
     }
     header{
